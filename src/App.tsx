@@ -31,10 +31,9 @@ function pigLogic(value: string) {
   });
   const vowels = ["a", "e", "i", "o", "u"];
   let finalValue = "";
-  console.log(pigValue);
   pigValue.map((value) => {
     if (value != "") {
-      if (vowels.includes(value.charAt(0))) {
+      if (vowels.includes(value.charAt(0).toLowerCase())) {
         if (value.endsWith("\n")) {
           value = value.slice(0, -1);
           value += "yay";
